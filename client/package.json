@@ -7,8 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "jest --watch --no-cache",
-    "test:ci": "jest --ci --coverage --watch --no-cache"
+    "test": "jest --watchAll --no-cache",
+    "test:ci": "jest --ci --coverage --watchAll --no-cache"
   },
   "dependencies": {
     "@testing-library/dom": "10.4.1",
