@@ -1,10 +1,16 @@
+"use client";
+
 import React from "react";
 import { Button } from "@/components/Button/Button";
 import Image from "next/image";
 import { Counter } from "@/components/Counter/Counter";
 import { TodoList } from "@/components/TodoList/TodoList";
+import { SignUpForm } from "@/components/SignUpForm/SignUpForm";
 
 export default function HomePage() {
+  const onSubmit = (data: any) => {
+    alert(data);
+  };
   return (
     <React.Fragment>
       <Button
@@ -14,6 +20,7 @@ export default function HomePage() {
       />
       <Counter />
       <TodoList />
+      <SignUpForm onSubmit={onSubmit} />
     </React.Fragment>
   );
 }
